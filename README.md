@@ -1,9 +1,15 @@
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/iFoxtrot33/frontend-project-11/workflows/hexlet-check/badge.svg)](https://github.com/iFoxtrot33/frontend-project-11/actions)
+# 🚀 Welcome to your new awesome project!
 
-### Code-Climate tests:
-<a href="https://codeclimate.com/github/iFoxtrot33/frontend-project-11/maintainability"><img src="https://api.codeclimate.com/v1/badges/7786dde115a5583dab33/maintainability" /></a>
-<a href="https://codeclimate.com/github/iFoxtrot33/frontend-project-11/test_coverage"><img src="https://api.codeclimate.com/v1/badges/7786dde115a5583dab33/test_coverage" /></a>
+This project has been created using **webpack-cli**, you can now run
 
-### Linter & Tests status:
-![Linter workflow](https://github.com/iFoxtrot33/frontend-project-lvl2/actions/workflows/lint.yml/badge.svg)
+```
+npm run build
+```
+
+or
+
+```
+yarn build
+```
+
+to bundle your application
