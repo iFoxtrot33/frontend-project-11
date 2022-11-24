@@ -7,4 +7,4 @@
 ### Linter status:
 ![Linter workflow](https://github.com/iFoxtrot33/frontend-project-11/actions/workflows/lint.yml/badge.svg)
 
-RSS reader page: https://frontend-project-11-ifoxtrot33.vercel.app/
+### RSS reader page: https://rss-reader-iurii.vercel.app/
