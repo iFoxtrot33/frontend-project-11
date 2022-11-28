@@ -1,6 +1,4 @@
 import * as yup from 'yup';
-import onChange from 'on-change';
-
 
 yup.setLocale({
   string: {
@@ -11,6 +9,7 @@ yup.setLocale({
 const elements = {
   border: document.querySelector('#url-input'),
   form: document.querySelector('.rss'),
+  danger: document.querySelector('.hide'),
 };
 
 const validate = (url) => {
@@ -21,11 +20,13 @@ const main = () => {
   elements.form.addEventListener('submit', (e) => {
     e.preventDefault();
     validate(elements.border.value)
-      .then((url) => {
+      .then(() => {
         elements.border.classList.remove('red-border');
+        elements.danger.style.display = 'none';
       })
-      .catch((error) => {
+      .catch(() => {
         elements.border.classList.add('red-border');
+        elements.danger.style.display = 'inline-block';
       });
   });
 };
