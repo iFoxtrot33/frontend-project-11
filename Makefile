@@ -3,3 +3,6 @@ install:
 
 lint:
 	npx eslint .
+
+start:
+	node src/js/index.js
