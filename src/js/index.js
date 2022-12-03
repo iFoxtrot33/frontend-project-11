@@ -1,7 +1,8 @@
 import * as yup from 'yup';
 import i18next from 'i18next';
 import ru from './locales/ru.js';
-import check from './checker.js';
+import validateError from './checker.js';
+import onChange from 'on-change';
 
 const i18n = i18next.createInstance();
 i18n.init({
@@ -32,7 +33,7 @@ const elements = {
   feedback: document.querySelector('.feedback'),
 };
 
-//const watchedState = check(state, elements, i18n);
+const watchedState = onChange(state, (path, value) => validateError(value, elements, i18n));
 
 const validate = (url) => {
   const schema = yup.string().required().url();
@@ -43,12 +44,12 @@ const main = () => {
     e.preventDefault();
     validate(elements.border.value.trim())
       .then(() => {
-        state.form.error = 'no';
-        check(state, elements, i18n);
+        watchedState.form.error = 'no';
+      //  check(state, elements, i18n);
       })
       .catch((err) => {
-        state.form.error = 'yes';
-        check(state, elements, i18n);
+        watchedState.form.error = 'yes';
+      //  check(state, elements, i18n);
       });
   });
 };
