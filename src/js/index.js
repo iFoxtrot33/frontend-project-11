@@ -1,8 +1,9 @@
 import * as yup from 'yup';
 import i18next from 'i18next';
+import onChange from 'on-change';
 import ru from './locales/ru.js';
 import validateError from './checker.js';
-import onChange from 'on-change';
+import loadUrl from './loader.js';
 
 const i18n = i18next.createInstance();
 i18n.init({
@@ -22,6 +23,10 @@ yup.setLocale({
 const state = {
   form: {
     error: 'no',
+  },
+  contents: {
+    feeds: [],
+    posts: [],
   },
 };
 

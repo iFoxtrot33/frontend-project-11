@@ -1,30 +1,20 @@
-const makeParse = (content) => {
-  const parser = new DOMParser();
-  const parsedContent = parser.parseFromString(content, 'text/html');
-  const parseError = parsedContent.querySelector('parsererror');
-  if (parseError) {
-    throw new Error('inValidRss');
-  } else {
-    const title = parsedContent.querySelector('title').textContent;
-    const description = parsedContent.querySelector('description').textContent;
-    const parsedPosts = parsedContent.querySelectorAll('item');
-    const posts = Array.from(parsedPosts).map((post) => {
-      const titlePost = post.querySelector('title').textContent;
-      const descriptionPost = post.querySelector('description').textContent;
-      const linkPost = post.querySelector('link').textContent;
-
-      return {
-        titlePost,
-        descriptionPost,
-        linkPost,
-      };
+const makeParse = (xml) => {
+  const newDomParser = new DOMParser();
+  const domXML = newDomParser.parseFromString(xml, 'text/xml');
+  const feed = {
+    title: domXML.querySelector('channel > title').textContent,
+    description: domXML.querySelector('channel > description').textContent,
+  };
+  const items = domXML.querySelectorAll('item');
+  const contents = [];
+  items.forEach((item) => {
+    contents.push({
+      title: item.querySelector('title').textContent,
+      description: item.querySelector('description').textContent,
+      link: item.querySelector('link').textContent,
     });
-    return {
-      title,
-      description,
-      posts,
-    };
-  }
+  });
+  return { feed, contents };
 };
 
 export default makeParse;
