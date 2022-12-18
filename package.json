@@ -44,7 +44,7 @@
     "workbox-webpack-plugin": "^6.5.4"
   },
   "keywords": [],
-  "main": "main.js",
+  "main": "index.js",
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "axios": "^1.2.1",
