@@ -11,10 +11,10 @@ https://rss-reader-iurii.vercel.app/
 
 ### Instructions:
 Start page
-![Rss demo 1](https://user-images.githubusercontent.com/102408798/208293030-2177a221-8206-4591-8248-6f51f39b8218.png)
+![Rss demo 1](https://user-images.githubusercontent.com/102408798/208293404-82e3856d-c35c-4f98-af1a-43ec7fd4357c.png)
 
 In case of wrong url
-![Rss demo 2](https://user-images.githubusercontent.com/102408798/208293133-92273f0d-21f9-4763-a9aa-d56af648fadb.png)
+![Rss demo 2](https://user-images.githubusercontent.com/102408798/208293420-8b392eef-940e-4d7d-84be-3bd499cc6f8e.png)
 
 In case of correct url
 ![Rss demo3](https://user-images.githubusercontent.com/102408798/208293314-7b633034-c05d-4c62-8a60-272f50a864d8.png)
