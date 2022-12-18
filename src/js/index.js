@@ -2,10 +2,10 @@ import * as yup from 'yup';
 import i18next from 'i18next';
 import _ from 'lodash';
 import axios from 'axios';
-import modifyUrl from './urlModifier';
-import makeParse from './parser';
-import watching from './view';
-import resources from './locales/index';
+import modifyUrl from './urlModifier.js';
+import makeParse from './parser.js';
+import watching from './view.js';
+import resources from './locales/index.js';
 
 const addEventActiveEl = (view, state) => {
   const listGroup = document.getElementById('posts');

@@ -1,9 +1,9 @@
 import onChange from 'on-change';
-import renderError from './renders/error';
-import renderSuccessfulDonwload from './renders/success';
-import renderFeeds from './renders/feeds';
-import renderContens from './renders/contents';
-import renderManagementForm from './renders/form';
+import renderError from './renders/error.js';
+import renderSuccessfulDonwload from './renders/success.js';
+import renderFeeds from './renders/feeds.js';
+import renderContens from './renders/contents.js';
+import renderManagementForm from './renders/form.js';
 
 const watching = (state, elements, i18n) => onChange(state, (path, newValue) => {
   switch (path) {
