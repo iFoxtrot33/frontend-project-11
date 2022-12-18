@@ -4,6 +4,7 @@ import onChange from 'on-change';
 import ru from './locales/ru.js';
 import validateError from './checker.js';
 import loadUrl from './loader.js';
+import modifyUrl from './urlModifier';
 
 const i18n = i18next.createInstance();
 i18n.init({
