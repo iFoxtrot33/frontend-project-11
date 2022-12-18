@@ -17,4 +17,5 @@ In case of wrong url
 ![Rss demo 2](https://user-images.githubusercontent.com/102408798/208293133-92273f0d-21f9-4763-a9aa-d56af648fadb.png)
 
 In case of correct url
-![Rss demo 3](https://user-images.githubusercontent.com/102408798/208293240-6e954200-adad-496c-85e2-2926e446676b.png)
+![Rss demo3](https://user-images.githubusercontent.com/102408798/208293314-7b633034-c05d-4c62-8a60-272f50a864d8.png)
+
