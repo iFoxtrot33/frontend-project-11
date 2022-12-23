@@ -31,3 +31,6 @@ In case of correct url
 2)To start
 
 `make start`
+
+### System requirements for local deploy:
+MacOS or Linux(WSL) 
