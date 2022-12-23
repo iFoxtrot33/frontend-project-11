@@ -1,4 +1,4 @@
-# RSS reader page
+# RSS page reader
 Stack: HTML,VanillaJs, Bootstrap, Webpack, i18next, Lodash, Yup
 
 ### Project tests:
@@ -22,4 +22,8 @@ In case of wrong url
 In case of correct url
 ![RSS demo 3](https://user-images.githubusercontent.com/102408798/208306269-18f6aa03-3915-4ceb-90b5-7e044510b66c.jpg)
 
-
+### To Start localy
+To install dependecies 
+`make install`
+To start
+`make start`
