@@ -1,4 +1,5 @@
 # RSS reader page
+Stack: HTML,VanillaJs, Bootstrap, Webpack, i18next, Lodash, Yup
 
 ### Project tests:
 [![Actions Status](https://github.com/iFoxtrot33/frontend-project-11/workflows/hexlet-check/badge.svg)](https://github.com/iFoxtrot33/frontend-project-11/actions)
